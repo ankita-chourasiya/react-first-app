@@ -2,10 +2,10 @@ import React from "react";
 
 export function Heading(heading_prop) {
   return (
-    <>
+    <React.Fragment>
       <h1>Heading {heading_prop.headingTitle} {heading_prop.code}</h1>
       <h1>Heading {heading_prop.code}</h1>
-    </>
+    </React.Fragment>
   );
 }
 
