@@ -10,7 +10,20 @@ export default class Counter extends Component {
   
   incrementCounter() {
     console.log("Qwerty")
-  }
+    this.setState (
+      {
+        countValue: this.state.countValue + 1
+      }
+    )
+  };
+
+  decrementCounter() {
+    if (this.state.countValue > 0) {
+      this.setState({
+        countValue: this.state.countValue - 1
+      });
+    }  
+  };
 
   render() {
     return (
@@ -18,9 +31,9 @@ export default class Counter extends Component {
         <div>
           Counter {this.state.countValue}
         </div>
-        <button onClick={this.incrementCounter}>+</button>
-        <button>-</button>
+        <button onClick={this.incrementCounter.bind(this)}>+</button>
+        <button onClick={this.decrementCounter.bind(this)}>-</button>
       </>
     )
-  }
+  };
 }
