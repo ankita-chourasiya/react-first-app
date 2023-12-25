@@ -1,10 +1,12 @@
+import React from "react";
+
 export function Heading(heading_prop) {
   return (
-    <div>
-      <h1>Heading {heading_prop.title} {heading_prop.code}</h1>
+    <>
+      <h1>Heading {heading_prop.headingTitle} {heading_prop.code}</h1>
       <h1>Heading {heading_prop.code}</h1>
-    </div>
-  )
+    </>
+  );
 }
 
 export function Paragraph(paragraph_prop) {

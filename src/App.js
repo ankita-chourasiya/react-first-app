@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Heading title="Qwerty" code="123"/>
+        <Heading headingTitle="Qwerty" code="123"/>
         <Paragraph aim="Motivation"/>
       </header>
     </div>
