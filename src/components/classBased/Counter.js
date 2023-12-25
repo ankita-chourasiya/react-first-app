@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Increment from './Increment';
 
 export default class Counter extends Component {
   constructor() {
@@ -28,9 +29,10 @@ export default class Counter extends Component {
   render() {
     return (
       <>
-        <div>
+        {/* <div>
           Counter {this.state.countValue}
-        </div>
+        </div> */}
+        <Increment countValue={this.state.countValue } />
         <button onClick={this.incrementCounter.bind(this)}>+</button>
         <button onClick={this.decrementCounter.bind(this)}>-</button>
       </>
