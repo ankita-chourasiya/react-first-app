@@ -23,7 +23,7 @@ export default class Counter extends Component {
       this.setState({
         countValue: this.state.countValue - 1
       });
-    }  
+    }
   };
 
   render() {
